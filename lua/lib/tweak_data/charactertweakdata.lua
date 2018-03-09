@@ -9,4 +9,5 @@ function CharacterTweakData:init(tweak_data)
 	self.swat.custom_voicework = "light"
 	self.fbi_swat.custom_voicework = "light"
 	self.city_swat.custom_voicework = "light"
+	self.taser.custom_voicework = "taser"
 end
