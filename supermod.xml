@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<mod name="ProjectPhoenix" global_key="projectphoenix">
+	<:include src="hooks.xml" />
+</mod>
