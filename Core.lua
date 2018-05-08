@@ -15,7 +15,7 @@ if not _G.projectphoenix then
 		_G.voiceline_framework:register_line_type("heavy", "death")
 		_G.voiceline_framework:register_line_type("heavy", "gogo")
 		_G.voiceline_framework:register_line_type("heavy", "pain")
-		--_G.voiceline_framework:register_line_type("heavy", "grenade_out")
+		_G.voiceline_framework:register_line_type("heavy", "grenade_out")
 		_G.voiceline_framework:register_line_type("heavy", "ready")
 		_G.voiceline_framework:register_line_type("heavy", "hostage")
 		_G.voiceline_framework:register_line_type("heavy", "reload")
@@ -34,7 +34,7 @@ if not _G.projectphoenix then
 		_G.voiceline_framework:register_line_type("light", "reload")
 		_G.voiceline_framework:register_line_type("light", "ready")
 		_G.voiceline_framework:register_line_type("light", "rescue_civ")
-		--_G.voiceline_framework:register_line_type("light", "grenade_out")
+		_G.voiceline_framework:register_line_type("light", "grenade_out")
 		_G.voiceline_framework:register_line_type("light", "retreat")
 		_G.voiceline_framework:register_line_type("light", "spawn")
 		_G.voiceline_framework:register_line_type("light", "kill")
@@ -125,9 +125,9 @@ if not _G.projectphoenix then
 			_G.voiceline_framework:register_voiceline("heavy", "hostage", ModPath .. "assets/voiceovers/heavy/hostage/hostage" .. i .. ".ogg")
 		end		
 		
-		--for i = 1, 12 do
-		--	_G.voiceline_framework:register_voiceline("heavy", "grenade_out", ModPath .. "assets/voiceovers/heavy/grenade_out/grenade_out" .. i .. ".ogg")
-		--end
+		for i = 1, 12 do
+			_G.voiceline_framework:register_voiceline("heavy", "grenade_out", ModPath .. "assets/voiceovers/heavy/grenade_out/grenade_out" .. i .. ".ogg")
+		end
 		
 		-- Lights
 
@@ -184,9 +184,9 @@ if not _G.projectphoenix then
 			_G.voiceline_framework:register_voiceline("light", "hostage", ModPath .. "assets/voiceovers/light/hostage/hostage" .. i .. ".ogg")
 		end
 		
-		--for i = 1, 8 do
-		--	_G.voiceline_framework:register_voiceline("light", "grenade_out", ModPath .. "assets/voiceovers/light/grenade_out/grenade_out" .. i .. ".ogg")
-		--end
+		for i = 1, 8 do
+			_G.voiceline_framework:register_voiceline("light", "grenade_out", ModPath .. "assets/voiceovers/light/grenade_out/grenade_out" .. i .. ".ogg")
+		end
 
 	else
 		log("NO FRAMEWORK!!!")
