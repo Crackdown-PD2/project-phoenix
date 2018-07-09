@@ -23,6 +23,7 @@ if not _G.projectphoenix then
 		_G.voiceline_framework:register_line_type("heavy", "retreat")
 		_G.voiceline_framework:register_line_type("heavy", "spawn")
 		_G.voiceline_framework:register_line_type("heavy", "kill")
+		_G.voiceline_framework:register_line_type("heavy", "clear")
 		
 		_G.voiceline_framework:register_line_type("light", "buddy_died")
 		_G.voiceline_framework:register_line_type("light", "contact")
@@ -38,6 +39,7 @@ if not _G.projectphoenix then
 		_G.voiceline_framework:register_line_type("light", "retreat")
 		_G.voiceline_framework:register_line_type("light", "spawn")
 		_G.voiceline_framework:register_line_type("light", "kill")
+		_G.voiceline_framework:register_line_type("light", "clear")
 		
 		_G.voiceline_framework:register_line_type("taser", "buddy_died")
 		_G.voiceline_framework:register_line_type("taser", "contact")
@@ -73,11 +75,11 @@ if not _G.projectphoenix then
 		
 		-- Heavies
 		
-		for i = 1, 65 do
+		for i = 1, 67 do
 			_G.voiceline_framework:register_voiceline("heavy", "buddy_died", ModPath .. "assets/voiceovers/heavy/buddy_died/buddy_died" .. i .. ".ogg")
 		end
 
-		for i = 1, 38 do
+		for i = 1, 47 do
 			_G.voiceline_framework:register_voiceline("heavy", "contact", ModPath .. "assets/voiceovers/heavy/contact/contact" .. i .. ".ogg")
 		end
 		
@@ -89,7 +91,7 @@ if not _G.projectphoenix then
 			_G.voiceline_framework:register_voiceline("heavy", "death", ModPath .. "assets/voiceovers/heavy/death/death" .. i .. ".ogg")
 		end
 
-		for i = 1, 48 do
+		for i = 1, 50 do
 			_G.voiceline_framework:register_voiceline("heavy", "gogo", ModPath .. "assets/voiceovers/heavy/gogo/gogo" .. i .. ".ogg")
 		end		
 		
@@ -113,11 +115,11 @@ if not _G.projectphoenix then
 			_G.voiceline_framework:register_voiceline("heavy", "rescue_civ", ModPath .. "assets/voiceovers/heavy/rescue_civ/rescue_civ" .. i .. ".ogg")
 		end
 		
-		for i = 1, 23 do
+		for i = 1, 26 do
 			_G.voiceline_framework:register_voiceline("heavy", "retreat", ModPath .. "assets/voiceovers/heavy/retreat/retreat" .. i .. ".ogg")
 		end
 
-		for i = 1, 27 do
+		for i = 1, 31 do
 			_G.voiceline_framework:register_voiceline("heavy", "spawn", ModPath .. "assets/voiceovers/heavy/spawn/spawn" .. i .. ".ogg")
 		end
 		
@@ -127,6 +129,10 @@ if not _G.projectphoenix then
 		
 		for i = 1, 12 do
 			_G.voiceline_framework:register_voiceline("heavy", "grenade_out", ModPath .. "assets/voiceovers/heavy/grenade_out/grenade_out" .. i .. ".ogg")
+		end
+		
+		for i = 1, 23 do
+			_G.voiceline_framework:register_voiceline("heavy", "clear", ModPath .. "assets/voiceovers/heavy/clear/clear" .. i .. ".ogg")
 		end
 		
 		-- Lights
@@ -186,6 +192,10 @@ if not _G.projectphoenix then
 		
 		for i = 1, 8 do
 			_G.voiceline_framework:register_voiceline("light", "grenade_out", ModPath .. "assets/voiceovers/light/grenade_out/grenade_out" .. i .. ".ogg")
+		end		
+		
+		for i = 1, 9 do
+			_G.voiceline_framework:register_voiceline("light", "clear", ModPath .. "assets/voiceovers/light/clear/clear" .. i .. ".ogg")
 		end
 
 	else
