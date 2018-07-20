@@ -39,7 +39,7 @@ if not _G.projectphoenix then
 		end		
 		
 		for i = 1, 10 do
-			_G.voiceline_framework:register_voiceline("taser", "tasing", ModPath .. "assets/voiceovers/taser/laugh/laugh (" .. i .. ").ogg")
+			_G.voiceline_framework:register_voiceline("taser", "laugh", ModPath .. "assets/voiceovers/taser/laugh/laugh (" .. i .. ").ogg")
 		end
 		
 	else
